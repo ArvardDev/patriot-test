@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Тест проект Patriot</title>
+  <meta name="description" content="Описание страницы или сайта">
+	
+	<meta name="robots" content="noindex, nofollow"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!-- подключение фавикона -->
+	<link rel="icon" href="img/favicon.png" sizes="32x32"/>
+
+	<!-- подключение шрифтов -->
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Open+Sans:wght@400;700&display=swap"> -->
+
+	<!-- подключение стилей -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/home.css"> -->
+	<!-- <link rel="stylesheet" href="css/media.css"> --> <!-- if we have 1 styles file / если у нас 1 файл стилей. -->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header class="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html" title="На главную">
+          <img src="img/logo.svg" alt="логотип компании" width="194" height="50">
+        </a>
+      </div>
+      <div class="header__actions">
+        <div class="header__nav">
+          <nav class="nav">
+           <ul class="nav__list">
+            <li class="nav__item">
+              <span class="nav__link">
+                Услуги
+              </span>
+              <ul>
+                <li><a href="#">Управление активами и активами и инвестиции</a></li>
+                <li><a href="#">Автоматизация бизнеса</a></li>
+                <li><a href="#">Финансовый аудит</a></li>
+                <li><a href="#">Юридическая практика</a></li>
+                <li><a href="#">Лизинг</a></li>
+                <li><a href="#">Информационная безопасность</a></li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <span class="nav__link">
+                Продукция
+              </span>
+              <ul>
+                <li><a href="#">Категория продукции 1</a></li>
+                <li><a href="#">Категория продукции 2</a></li>
+                <li><a href="#">Категория продукции 3</a></li>
+                <li><a href="#">Категория продукции 4</a></li>
+                <li><a href="#">Категория продукции 5</a></li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <span class="nav__link">
+                Проекты
+              </span>
+              <ul>
+                <li><a href="#">Наименование проекта 1</a></li>
+                <li><a href="#">Наименование проекта 2</a></li>
+                <li><a href="#">Наименование проекта 3</a></li>
+                <li><a href="#">Наименование проекта 4</a></li>
+                <li><a href="#">Наименование проекта 5</a></li>
+                <li><a href="#">Наименование проекта 6</a></li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <span class="nav__link">
+                Компания
+              </span>
+              <ul>
+                <li><a href="#">Компании 1</a></li>
+                <li><a href="#">Компания 2</a></li>
+                <li><a href="#">Длинная компания 3</a></li>
+                <li><a href="#">Очень длинная компания 4</a></li>
+              </ul>
+            </li>
+           </ul>
+          </nav>
+          <div class="header__location">
+            <span>Санкт-Петербург</span>
+          </div>
+        </div>
+        <div class="header__phone">
+          <a href="tel:+78009413428" title="Позвонить" aria-label="Позвонить">
+            +7 (800) 941-34-28
+          </a>
+        </div>
+      </div>
+      <button class="header__mob-btn mobile-menu-btn">
+        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
+          <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+          <path class="line middle" d="m 70,50 h -40" />
+          <path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+        </svg>
+      </button>
+    </div>
+</header>
+	
+			<section class="hero" style="background-image: url('img/hero-bg.png');">
+        <div class="container">
+          <div class="owl-carousel owl-theme hero__slider">
+            <div class="item hero__item">
+              <div class="hero__content">
+                <h1 class="hero__title">Patriot —  это ключ к успешному бизнесу по всей территории РФ</h1>
+                <div class="hero__descr">
+                  <p>
+                    Роскошный, быстрый, практичный автомобиль на выгодных условиях лизинга. Станьте ближе к мечте и сократите налог на имущество в три раза.
+                  </p>
+                </div>
+              </div>
+              <!-- <form class="feedback-form" action="#" method="POST" enctype="multipart/form-data">
+                <h3 class="feedback-form__title">
+                  Оставить заявку
+                </h3>
+                <p class="feedback-form__descr">
+                  Заполните форму и мы свяжемся с вами, чтобы узнать детали вашего проекта.
+                </p>
+                <label for="feedback-name-1">
+                  <span>Имя*</span>
+                  <input class="input-name" id="feedback-name-1" name="Имя" type="text" required>
+                </label>
+                <label for="feedback-tel-1">
+                  <span>Телефон*</span>
+                  <input class="input-tel" id="feedback-tel-1" name="Телефон" type="tel" required>
+                </label>
+                <div class="feedback-form__confirm">
+                  <input class="input-check" id="feedback-check-1" type="checkbox" required>
+                  <label class="check-label" for="feedback-check-1">Я принимаю <a href="#">условия передачи информации</a></label>
+                </div>
+                <button class="feedback-form__btn glob-btn" onclick="console.log('Кнопка нажата')">
+                  Связаться с нами
+                </button>
+                <div class="thanks-message">
+                  <p>Спасибо за обращение!<br>
+                  Ваше сообщение будет рассмотрено<br>
+                  в ближайшее время!</p>
+                </div>
+              </form> -->
+            </div>
+            <div class="item hero__item">
+              <div class="hero__content">
+                <h1 class="hero__title">Patriot —  это ключ к успешному бизнесу по всей территории РФ</h1>
+                <div class="hero__descr">
+                  <p>
+                    Роскошный, быстрый, практичный автомобиль на выгодных условиях лизинга. Станьте ближе к мечте и сократите налог на имущество в три раза.
+                  </p>
+                </div>
+              </div>
+              <!-- <form class="feedback-form" action="#" method="POST" enctype="multipart/form-data">
+                <h3 class="feedback-form__title">
+                  Оставить заявку
+                </h3>
+                <p class="feedback-form__descr">
+                  Заполните форму и мы свяжемся с вами, чтобы узнать детали вашего проекта.
+                </p>
+                <label for="feedback-name-2">
+                  <span>Имя*</span>
+                  <input class="input-name" id="feedback-name-2" name="Имя" type="text" required>
+                </label>
+                <label for="feedback-tel-2">
+                  <span>Телефон*</span>
+                  <input class="input-tel" id="feedback-tel-2" name="Телефон" type="tel" required>
+                </label>
+                <div class="feedback-form__confirm">
+                  <input class="input-check" id="feedback-check-2" type="checkbox" required>
+                  <label class="check-label" for="feedback-check-2">Я принимаю <a href="#">условия передачи информации</a></label>
+                </div>
+                <button class="feedback-form__btn glob-btn" onclick="console.log('Кнопка нажата')">
+                  Связаться с нами
+                </button>
+                <div class="thanks-message">
+                  <p>Спасибо за обращение!<br>
+                  Ваше сообщение будет рассмотрено<br>
+                  в ближайшее время!</p>
+                </div>
+              </form> -->
+            </div>
+            <div class="item hero__item">
+              <div class="hero__content">
+                <h1 class="hero__title">Patriot —  это ключ к успешному бизнесу по всей территории РФ</h1>
+                <div class="hero__descr">
+                  <p>
+                    Роскошный, быстрый, практичный автомобиль на выгодных условиях лизинга. Станьте ближе к мечте и сократите налог на имущество в три раза.
+                  </p>
+                </div>
+              </div>
+              <!-- <form class="feedback-form" action="#" method="POST" enctype="multipart/form-data">
+                <h3 class="feedback-form__title">
+                  Оставить заявку
+                </h3>
+                <p class="feedback-form__descr">
+                  Заполните форму и мы свяжемся с вами, чтобы узнать детали вашего проекта.
+                </p>
+                <label for="feedback-name-3">
+                  <span>Имя*</span>
+                  <input class="input-name" id="feedback-name-3" name="Имя" type="text" required>
+                </label>
+                <label for="feedback-tel-3">
+                  <span>Телефон*</span>
+                  <input class="input-tel" id="feedback-tel-3" name="Телефон" type="tel" required>
+                </label>
+                <div class="feedback-form__confirm">
+                  <input class="input-check" id="feedback-check-3" type="checkbox" required>
+                  <label class="check-label" for="feedback-check-3">Я принимаю <a href="#">условия передачи информации</a></label>
+                </div>
+                <button class="feedback-form__btn glob-btn" onclick="console.log('Кнопка нажата')">
+                  Связаться с нами
+                </button>
+                <div class="thanks-message">
+                  <p>Спасибо за обращение!<br>
+                  Ваше сообщение будет рассмотрено<br>
+                  в ближайшее время!</p>
+                </div>
+              </form> -->
+            </div>
+          </div>
+            <form class="feedback-form" action="#" method="POST" enctype="multipart/form-data">
+              <h3 class="feedback-form__title">
+                Оставить заявку
+              </h3>
+              <p class="feedback-form__descr">
+                Заполните форму и мы свяжемся с вами, чтобы узнать детали вашего проекта.
+              </p>
+              <label for="feedback-name-1">
+                <span>Имя*</span>
+                <input class="input-name" id="feedback-name-1" name="Имя" type="text" required>
+              </label>
+              <label for="feedback-tel-1">
+                <span>Телефон*</span>
+                <input class="input-tel" id="feedback-tel-1" name="Телефон" type="tel" required>
+              </label>
+              <div class="feedback-form__confirm">
+                <input class="input-check" id="feedback-check-1" type="checkbox" required>
+                <label class="check-label" for="feedback-check-1">Я принимаю <a href="#">условия передачи информации</a></label>
+              </div>
+              <button class="feedback-form__btn glob-btn" onclick="console.log('Кнопка нажата')">
+                Связаться с нами
+              </button>
+              <div class="thanks-message">
+                <p>Спасибо за обращение!<br>
+                Ваше сообщение будет рассмотрено<br>
+                в ближайшее время!</p>
+              </div>
+            </form>
+        </div>
+			</section>
+
+      <section class="tariffs">
+        <div class="container">
+          <div class="tariffs__inner">
+            <h2 class="section-title">
+              Тарифы
+            </h2>
+            <div class="owl-carousel owl-theme tariffs__slider">
+
+              <div class="item tariffs__item">
+                <div class="tariffs__card tariffs-card">
+                  <div class="tariffs-card__top" style="background-image: url('img/tariff-img.png'); background-size: auto;">
+                    <div class="tariffs-card__markers">
+                      <span class="disc-mark">акция</span>
+                      <span class="new-mark">новинка</span>
+                      <!-- <span class="hit-mark">хит</span> -->
+                    </div>
+                    <h4 class="tariffs-card__title">
+                      Лайт
+                    </h4>
+                  </div>
+                  <div class="tariffs-card__pay-meth">
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Visa, Master Card, МИР
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Apple Pay, Android Pay
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Электронные кошельки
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Оборот
+                      </div>
+                      <div class="tariffs-card__value">
+                        от 0 до 200 т.р.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tariffs-card__pay-box">
+                    <div class="tariffs-card__price">
+                      <span class="new-price">
+                        120 000 ₽
+                      </span>
+                      <span class="old-price">
+                        <!-- 125 000 ₽ -->
+                      </span>
+                    </div>
+                    <div class="tariffs-card__btn glob-btn">
+                      Оплатить
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item tariffs__item">
+                <div class="tariffs__card tariffs-card">
+                  <div class="tariffs-card__top" style="background-image: url('img/tariff-img.png'); background-size: auto;">
+                    <div class="tariffs-card__markers">
+                      <span class="disc-mark">акция</span>
+                      <span class="new-mark">новинка</span>
+                      <span class="hit-mark">хит</span>
+                    </div>
+                    <h4 class="tariffs-card__title">
+                      Лайт
+                    </h4>
+                  </div>
+                  <div class="tariffs-card__pay-meth">
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Visa, Master Card, МИР
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Apple Pay, Android Pay
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Электронные кошельки
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Оборот
+                      </div>
+                      <div class="tariffs-card__value">
+                        от 0 до 200 т.р.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tariffs-card__pay-box">
+                    <div class="tariffs-card__price">
+                      <span class="new-price">
+                        120 000 ₽
+                      </span>
+                      <span class="old-price">
+                        125 000 ₽
+                      </span>
+                    </div>
+                    <div class="tariffs-card__btn glob-btn">
+                      Оплатить
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item tariffs__item">
+                <div class="tariffs__card tariffs-card">
+                  <div class="tariffs-card__top" style="background-image: url('img/tariff-img.png'); background-size: auto;">
+                    <div class="tariffs-card__markers">
+                      <!-- <span class="disc-mark">акция</span> -->
+                      <!-- <span class="new-mark">новинка</span> -->
+                      <span class="hit-mark">хит</span>
+                    </div>
+                    <h4 class="tariffs-card__title">
+                      Лайт
+                    </h4>
+                  </div>
+                  <div class="tariffs-card__pay-meth">
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Visa, Master Card, МИР
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Apple Pay, Android Pay
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Электронные кошельки
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Оборот
+                      </div>
+                      <div class="tariffs-card__value">
+                        от 0 до 200 т.р.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tariffs-card__pay-box">
+                    <div class="tariffs-card__price">
+                      <span class="new-price">
+                        120 000 ₽
+                      </span>
+                      <span class="old-price">
+                        <!-- 125 000 ₽ -->
+                      </span>
+                    </div>
+                    <div class="tariffs-card__btn glob-btn">
+                      Оплатить
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item tariffs__item">
+                <div class="tariffs__card tariffs-card">
+                  <div class="tariffs-card__top" style="background-image: url('img/tariff-img.png'); background-size: auto;">
+                    <div class="tariffs-card__markers">
+                      <!-- <span class="disc-mark">акция</span> -->
+                      <span class="new-mark">новинка</span>
+                      <span class="hit-mark">хит</span>
+                    </div>
+                    <h4 class="tariffs-card__title">
+                      Лайт
+                    </h4>
+                  </div>
+                  <div class="tariffs-card__pay-meth">
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Visa, Master Card, МИР
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Apple Pay, Android Pay
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Электронные кошельки
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Оборот
+                      </div>
+                      <div class="tariffs-card__value">
+                        от 0 до 200 т.р.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tariffs-card__pay-box">
+                    <div class="tariffs-card__price">
+                      <span class="new-price">
+                        120 000 ₽
+                      </span>
+                      <span class="old-price">
+                        <!-- 125 000 ₽ -->
+                      </span>
+                    </div>
+                    <div class="tariffs-card__btn glob-btn">
+                      Оплатить
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item tariffs__item">
+                <div class="tariffs__card tariffs-card">
+                  <div class="tariffs-card__top" style="background-image: url('img/tariff-img.png'); background-size: auto;">
+                    <div class="tariffs-card__markers">
+                      <span class="disc-mark">акция</span>
+                      <span class="new-mark">новинка</span>
+                      <span class="hit-mark">хит</span>
+                    </div>
+                    <h4 class="tariffs-card__title">
+                      Лайт
+                    </h4>
+                  </div>
+                  <div class="tariffs-card__pay-meth">
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Visa, Master Card, МИР
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Apple Pay, Android Pay
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Электронные кошельки
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Оборот
+                      </div>
+                      <div class="tariffs-card__value">
+                        от 0 до 200 т.р.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tariffs-card__pay-box">
+                    <div class="tariffs-card__price">
+                      <span class="new-price">
+                        120 000 ₽
+                      </span>
+                      <span class="old-price">
+                        125 000 ₽
+                      </span>
+                    </div>
+                    <div class="tariffs-card__btn glob-btn">
+                      Оплатить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="item tariffs__item">
+                <div class="tariffs__card tariffs-card">
+                  <div class="tariffs-card__top" style="background-image: url('img/tariff-img.png'); background-size: auto;">
+                    <div class="tariffs-card__markers">
+                      <span class="disc-mark">акция</span>
+                      <span class="new-mark">новинка</span>
+                      <span class="hit-mark">хит</span>
+                    </div>
+                    <h4 class="tariffs-card__title">
+                      Лайт
+                    </h4>
+                  </div>
+                  <div class="tariffs-card__pay-meth">
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Visa, Master Card, МИР
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Apple Pay, Android Pay
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Электронные кошельки
+                      </div>
+                      <div class="tariffs-card__value">
+                        3.7%
+                      </div>
+                    </div>
+                    <div class="tariffs-card__row">
+                      <div class="tariffs-card__method">
+                        Оборот
+                      </div>
+                      <div class="tariffs-card__value">
+                        от 0 до 200 т.р.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tariffs-card__pay-box">
+                    <div class="tariffs-card__price">
+                      <span class="new-price">
+                        120 000 ₽
+                      </span>
+                      <span class="old-price">
+                        125 000 ₽
+                      </span>
+                    </div>
+                    <div class="tariffs-card__btn glob-btn">
+                      Оплатить
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+		</div>
+	
+		  <footer class="footer">
+    <div class="container">
+      
+    </div>
+  </footer>
+
+  <!-- <div class="popup popup-video" id="popup-video">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#header" class="popup__close close-popup" aria-label="overlay bg">
+          <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M10.05 23.95a1 1 0 0 0 1.414 0L17 18.414l5.536 5.536a1 1 0 0 0 1.414-1.414L18.414 17l5.536-5.536a1 1 0 0 0-1.414-1.414L17 15.586l-5.536-5.536a1 1 0 0 0-1.414 1.414L15.586 17l-5.536 5.536a1 1 0 0 0 0 1.414z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<!-- jquery, plugins libraries -->
+<script src="js/libs.min.js"></script>
+
+<!-- other plugins -->
+<!-- <script src=""></script> -->
+
+<!-- main jq/js file -->
+<script src="js/main.js"></script>
+</body>
+</html>
